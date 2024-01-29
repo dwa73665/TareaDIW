@@ -1,0 +1,476 @@
+/* Adrian Pomar Maseda DNI 50765578R*/
+
+/* ************************************************ */
+/* ******************* COMUN ********************** */
+/* ************************************************ */
+h1 {
+  color: #257925;
+  text-align: center;
+  font-size: 3vw;
+  text-decoration: underline;
+  margin-top: 5vh;
+}
+/* ************** NAV  ************** */
+.barra_navegacion {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.barra_navegacion ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #257925;
+}
+.barra_navegacion li {
+  padding: 1vw 1vw;
+}
+.barra_navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.barra_navegacion a:link {
+  color: white;
+  text-decoration: none;
+}
+.barra_navegacion a:hover {
+  color: #257925;
+  background-color: white;
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  .barra_navegacion ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .barra_navegacion a {
+    font-size: 1rem;
+  }
+}
+/* ************** FOOTER COMUN ************** */
+footer {
+  margin-top: 3vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #257925;
+  color: white;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#info {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1rem;
+}
+footer ul {
+  list-style: none;
+}
+#mapa a {
+  font-size: 1rem;
+}
+#redes a {
+  font-size: 0.8rem;
+}
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  background-color: white;
+  color: #257925;
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    margin-top: 3vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #257925;
+    color: white;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #mapa {
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+  }
+}
+/* ************************************************ */
+/* ******************* INDEX ********************** */
+/* ************************************************ */
+.hero {
+  background-image: url(../imagenes/moutains-gb941c23cb_1920.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 97vh;
+  text-align: center;
+  margin-top: 5vh;
+}
+.hero div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: #f6fa1f 2px solid;
+  padding: 2vw;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+}
+.hero h1 {
+  font-size: 10vw;
+  color: #f6fa1f;
+  text-decoration: none;
+}
+.hero p {
+  font-size: 8vw;
+  color: #f6fa1f;
+}
+.index_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.index_main h2 {
+  display: block;
+  text-decoration: underline;
+  padding: 2vw 0;
+  color: #257925;
+}
+.index_main article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sec_normal {
+  width: 50%;
+  margin: auto;
+}
+.sec_deco {
+  width: 50%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.index_main p {
+  width: 70%;
+  margin: auto;
+}
+.sec_deco p {
+  width: 70%;
+  margin: auto;
+  border-bottom: 3px solid #257925;
+  border-top: 3px solid #257925;
+  background-color: #3bd33b5d;
+  padding: 1vw;
+}
+#galeria h2 {
+  margin-top: 3vh;
+  text-align: center;
+  text-decoration: underline;
+
+  padding: 2vw 0;
+  color: #257925;
+}
+#cuadricula {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1vw;
+  width: 50%;
+  margin: 0 auto;
+}
+#cuadricula div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cuadricula img {
+  border: 2px solid black;
+  box-shadow: 0 0 10px black;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+#cuadricula img:hover {
+  transform: scale(1.5);
+  transform-origin: center;
+  transition: transform 0.9s;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+/* ************************************************ */
+/* **************** CIUDADES ********************** */
+/* ************************************************ */
+#main_ciudades {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 6vh;
+}
+#nav_lateral {
+  width: 10%;
+  font-size: 1em;
+  position: fixed;
+  left: 0;
+  border: black 1px solid;
+  margin: 2.5% 2.5%;
+}
+#nav_lateral h5 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  background-color: #b1e5ffb2;
+  border-bottom: 1px solid black;
+}
+#nav_lateral ul {
+  list-style: none;
+  text-align: justify;
+}
+#nav_lateral a:link {
+  text-decoration: none;
+  color: black;
+}
+#ciudades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+#ciudades section {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ciudades p {
+  text-align: justify;
+  width: 80%;
+}
+#ciudades section:nth-child(odd) {
+  background-color: #91daff;
+  border: 1px black solid;
+}
+#ciudades section:nth-child(even) {
+  background-color: #b1e5ffb2;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+}
+#ciudades h2 {
+  margin-top: 2vh;
+  text-align: center;
+}
+#contenedor pre {
+  font: sans-serif;
+  margin: 0;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  padding: 0;
+  text-align: justify;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ciudades img {
+  width: 50%;
+  display: block;
+  margin: 3vh auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #nav_lateral {
+    display: none;
+  }
+
+  #main_ciudades {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20vh;
+  }
+  #ciudades img {
+    width: 100%;
+    display: block;
+    margin: 3vh auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+/* ************************************************ */
+/* **************** NATURALEZA ******************** */
+/* ************************************************ */
+.naturaleza {
+  width: 80%;
+  margin: auto;
+}
+.naturaleza article {
+  margin-top: 3vh;
+}
+.naturaleza section {
+  margin: 1vh auto;
+  border: 1px solid #000000;
+  background-color: #ffe4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.naturaleza section {
+  transition: all 0.5s;
+}
+.naturaleza section:hover {
+  transform: scale(1.05);
+}
+.naturaleza img {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: black 1px solid;
+  box-shadow: black 0 0 10px;
+  border-radius: 10px;
+}
+.naturaleza h3 {
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.naturaleza h4 {
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.naturaleza p {
+  width: 80%;
+  text-align: justify;
+  margin: 1vh 1vw;
+}
+/* ************************************************ */
+/* **************** CONTACTO ********************** */
+/* ************************************************ */
+form {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+  align-items: center;
+  border: 1px solid #257925;
+  border-radius: 5px;
+}
+.contacto h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 5vh;
+  text-decoration: underline;
+}
+.contacto input {
+  width: 100%;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.contacto textarea {
+  width: 100%;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.contacto button {
+  width: 60%;
+  padding: 1vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #257925;
+}
+.contacto button:hover {
+  background-color: rgb(155, 246, 180);
+  animation: animacion 1s ease-in-out infinite;
+}
+@keyframes animacion {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ************************************************ */
+/* ****************** MAPA ************************ */
+/* ************************************************ */
+#contenedor {
+  width: 20%;
+  margin: 10vh auto;
+  padding: 0 5vw;
+}
+#contenedor ul {
+  border: 1px solid black;
+}
+#contenedor li {
+  margin: 1vh 0;
+}
+#contenedor a {
+  color: black;
+  margin: auto;
+  padding: 0;
+  text-decoration: none;
+  font-size: 1vw;
+}
+#contenedor a:hover {
+  color: white;
+  background-color: #257925;
+}
